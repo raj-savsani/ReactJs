@@ -10,22 +10,23 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Counter/>
-        
+        {/* <Counter/> */}
+
         {/* <Message/> */}
-{/*         
+        
         <Greet name="Raj" heroName="Batman">
           <p>This is Children porps</p>
         </Greet>
-        <Greet name="Yagnik" heroName="Superman">
+
+        {/* <Greet name="Yagnik" heroName="Superman">
           <button>Action</button>
         </Greet>
-        <Greet name="Chirag" heroName="Ironman" />
+        <Greet name="Chirag" heroName="Ironman" /> */}
         
         <Welcome name="Raj" heroName="Batman"></Welcome>
-        <Welcome name="Yagnik" heroName="Superman"></Welcome>
-        <Welcome name="Chirag" heroName="Ironman"></Welcome> 
-*/}
+        {/* <Welcome name="Yagnik" heroName="Superman"></Welcome>
+        <Welcome name="Chirag" heroName="Ironman"></Welcome>  */}
+
 
 
       </div>
