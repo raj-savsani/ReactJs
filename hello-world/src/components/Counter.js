@@ -9,17 +9,29 @@ class counter extends Component {
     };
   }
   Inc() {
-      this.setState({
-          count: this.state.count+1
-      },()=>{ console.log("callback Value",this.state.count)})
-      console.log('this.state.count:', this.state.count)
+    //   this.setState({
+    //       count: this.state.count+1
+    //   },()=>{ console.log("callback Value",this.state.count)})
+    this.setState(prevState =>({
+        count:prevState.count+1
+    }))
+    
+    //   console.log('this.state.count:', this.state.count)
+  }
+
+  IncFive(){
+      this.Inc();
+      this.Inc();
+      this.Inc();
+      this.Inc();
+      this.Inc();
   }
 
   render() {
     return (
       <div>
         <div>count - {this.state.count}</div>
-        <button onClick={() => this.Inc()}>Increment</button>
+        <button onClick={() => this.IncFive()}>Increment</button>
       </div>
     );
   }
