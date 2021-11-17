@@ -9,6 +9,8 @@ import FunctionClick from "./components/FunctionClick";
 import ClassClick from "./components/ClassClick";
 import EventBind from "./components/EventBind";
 import ParentComponent from "./components/ParentComponent";
+import UserGreeeting from "./components/UserGreeeting";
+
 
 
 
@@ -17,7 +19,9 @@ class App extends Component {
     return (
       <div className="App">
 
-        <ParentComponent/>
+        <UserGreeeting></UserGreeeting>
+      
+        {/* <ParentComponent/> */}
 
         {/* <EventBind></EventBind> */}
         {/* <FunctionClick/> */}
