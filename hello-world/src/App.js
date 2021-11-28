@@ -10,7 +10,7 @@ import ClassClick from "./components/ClassClick";
 import EventBind from "./components/EventBind";
 import ParentComponent from "./components/ParentComponent";
 import UserGreeeting from "./components/UserGreeeting";
-
+import NameList from "./components/NameList";
 
 
 
@@ -19,7 +19,9 @@ class App extends Component {
     return (
       <div className="App">
 
-        <UserGreeeting></UserGreeeting>
+        <NameList/>
+
+        {/* <UserGreeeting></UserGreeeting> */}
       
         {/* <ParentComponent/> */}
 
