@@ -5,10 +5,12 @@ function Namelist() {
   // const names = ['Raj','Tilak','Chirag']
   const persons = [
     { id: 1, name: "Raj", age: 25, skill: "React" },
-    { id: 1, name: "Tilak", age: 26, skill: "Javascript" },
-    { id: 1, name: "Chirag", age: 27, skill: "NodeJS" },
+    { id: 2, name: "Tilak", age: 26, skill: "Javascript" },
+    { id: 3, name: "Chirag", age: 27, skill: "NodeJS" },
   ];
-  const personList = persons.map((person) => <Person person={person}></Person>);
+  const personList = persons.map((person) => (
+    <Person key={person.id} person={person} />
+  ));
   return (
     <div>
       {/* <h2>{names[0]}</h2>
@@ -17,7 +19,7 @@ function Namelist() {
       {/* {
                 names.map(name=><h2>{name}</h2>)
             } */}
-            {personList}
+      {personList}
     </div>
   );
 }
