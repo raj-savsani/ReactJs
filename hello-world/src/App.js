@@ -13,18 +13,23 @@ import UserGreeeting from "./components/UserGreeeting";
 import NameList from "./components/NameList";
 import Form from "./components/Form";
 import LifecycleA from "./components/LifecycleA";
-
+import FrangmentDemo from "./components/FrangmentDemo";
+import Table from "./components/Table";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <LifecycleA></LifecycleA>
+        
+        <Table></Table>
+
+        {/* <FrangmentDemo></FrangmentDemo> */}
+        {/* <LifecycleA></LifecycleA> */}
         {/* <Form></Form> */}
         {/* <NameList/> */}
 
         {/* <UserGreeeting></UserGreeeting> */}
-      
+
         {/* <ParentComponent/> */}
 
         {/* <EventBind></EventBind> */}
@@ -34,7 +39,7 @@ class App extends Component {
         {/* <Counter/> */}
 
         {/* <Message/> */}
-        
+
         {/* <Greet name="Raj" heroName="Batman">
           <p>This is Children porps</p>
         </Greet> */}
@@ -43,13 +48,10 @@ class App extends Component {
           <button>Action</button>
         </Greet>
         <Greet name="Chirag" heroName="Ironman" /> */}
-        
+
         {/* <Welcome name="Raj" heroName="Batman"></Welcome> */}
         {/* <Welcome name="Yagnik" heroName="Superman"></Welcome>
         <Welcome name="Chirag" heroName="Ironman"></Welcome>  */}
-
-
-
       </div>
     );
   }
