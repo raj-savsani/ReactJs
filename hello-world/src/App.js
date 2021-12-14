@@ -12,13 +12,15 @@ import ParentComponent from "./components/ParentComponent";
 import UserGreeeting from "./components/UserGreeeting";
 import NameList from "./components/NameList";
 import Form from "./components/Form";
+import LifecycleA from "./components/LifecycleA";
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Form></Form>
+        <LifecycleA></LifecycleA>
+        {/* <Form></Form> */}
         {/* <NameList/> */}
 
         {/* <UserGreeeting></UserGreeeting> */}
