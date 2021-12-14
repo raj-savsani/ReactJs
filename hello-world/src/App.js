@@ -11,15 +11,15 @@ import EventBind from "./components/EventBind";
 import ParentComponent from "./components/ParentComponent";
 import UserGreeeting from "./components/UserGreeeting";
 import NameList from "./components/NameList";
-
+import Form from "./components/Form";
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-
-        <NameList/>
+        <Form></Form>
+        {/* <NameList/> */}
 
         {/* <UserGreeeting></UserGreeeting> */}
       
