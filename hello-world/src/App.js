@@ -18,13 +18,16 @@ import Table from "./components/Table";
 import PureComp from "./components/PureComp";
 import ParentComp from "./components/ParentComp";
 import RefSDemo from "./components/RefSDemo";
+import FocusInput from "./components/FocusInput";
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <RefSDemo></RefSDemo>
+        <FocusInput></FocusInput>
 
+        {/* <RefSDemo></RefSDemo> */}
         {/* <ParentComp></ParentComp> */}
         {/* <Table></Table> */}
 
