@@ -17,14 +17,15 @@ import FrangmentDemo from "./components/FrangmentDemo";
 import Table from "./components/Table";
 import PureComp from "./components/PureComp";
 import ParentComp from "./components/ParentComp";
+import RefSDemo from "./components/RefSDemo";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <RefSDemo></RefSDemo>
 
-
-        <ParentComp></ParentComp>
+        {/* <ParentComp></ParentComp> */}
         {/* <Table></Table> */}
 
         {/* <FrangmentDemo></FrangmentDemo> */}
