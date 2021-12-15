@@ -32,8 +32,9 @@ class App extends Component {
       <div className="App">
 
 
-      <HoverCounter></HoverCounter>
-        {/* <ClickCounter></ClickCounter> */}
+        
+        <ClickCounter></ClickCounter>
+        <HoverCounter></HoverCounter>
         {/* <ErrorBoundary>
         <Hero heroname="Batman"></Hero>
         </ErrorBoundary>
