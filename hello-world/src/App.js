@@ -32,9 +32,13 @@ class App extends Component {
       <div className="App">
 
 
+
         
-        <ClickCounter></ClickCounter>
+        
+        
+        <ClickCounter name="Raj Savsani"></ClickCounter>
         <HoverCounter></HoverCounter>
+        
         {/* <ErrorBoundary>
         <Hero heroname="Batman"></Hero>
         </ErrorBoundary>
@@ -50,24 +54,20 @@ class App extends Component {
         {/* <RefSDemo></RefSDemo> */}
         {/* <ParentComp></ParentComp> */}
         {/* <Table></Table> */}
-
         {/* <FrangmentDemo></FrangmentDemo> */}
         {/* <LifecycleA></LifecycleA> */}
         {/* <Form></Form> */}
         {/* <NameList/> */}
-
         {/* <UserGreeeting></UserGreeeting> */}
-
         {/* <ParentComponent/> */}
-
         {/* <EventBind></EventBind> */}
         {/* <FunctionClick/> */}
         {/* <ClassClick/> */}
 
+
+
         {/* <Counter/> */}
-
         {/* <Message/> */}
-
         {/* <Greet name="Raj" heroName="Batman">
           <p>This is Children porps</p>
         </Greet> */}

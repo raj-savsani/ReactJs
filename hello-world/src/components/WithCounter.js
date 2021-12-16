@@ -16,10 +16,12 @@ const UpdatedComponent = (OriginalComponent) => {
       });
     };
     render() {
+      console.log(this.props.name)
       return (
         <OriginalComponent
           count={this.state.count}
           incrementCount={this.incrementCount}
+          {...this.props}
         ></OriginalComponent>
       );
     }
