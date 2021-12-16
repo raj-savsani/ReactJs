@@ -25,20 +25,26 @@ import Hero from "./components/Hero";
 import ErrorBoundary from "./components/ErrorBoundary";
 import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
+import ClickCounterTwo from "./components/ClickCounterTwo";
+import HoverCounterTwo from "./components/HoverCounterTwo";
+import Counter1 from "./components/Counter1";
+import User from "./components/User";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <User render={(isLoggedIn) => isLoggedIn ? 'Raj' : 'Savsani'}></User>
+        <Counter1
+          render={(count, incrementCount) => (
+            <ClickCounterTwo count={count} incrementCount={incrementCount} />
+          )}
+        />
 
-
-
-        
-        
-        
-        <ClickCounter name="Raj Savsani"></ClickCounter>
-        <HoverCounter></HoverCounter>
-        
+        {/* <ClickCounterTwo></ClickCounterTwo>
+        <HoverCounterTwo></HoverCounterTwo> */}
+        {/* <ClickCounter name="Raj Savsani"></ClickCounter>
+        <HoverCounter></HoverCounter> */}
         {/* <ErrorBoundary>
         <Hero heroname="Batman"></Hero>
         </ErrorBoundary>
@@ -64,8 +70,6 @@ class App extends Component {
         {/* <FunctionClick/> */}
         {/* <ClassClick/> */}
 
-
-
         {/* <Counter/> */}
         {/* <Message/> */}
         {/* <Greet name="Raj" heroName="Batman">
@@ -77,8 +81,8 @@ class App extends Component {
         </Greet>
         <Greet name="Chirag" heroName="Ironman" /> */}
 
-        {/* <Welcome name="Raj" heroName="Batman"></Welcome> */}
-        {/* <Welcome name="Yagnik" heroName="Superman"></Welcome>
+        {/* <Welcome name="Raj" heroName="Batman"></Welcome>
+        <Welcome name="Yagnik" heroName="Superman"></Welcome>
         <Welcome name="Chirag" heroName="Ironman"></Welcome>  */}
       </div>
     );
